@@ -9,7 +9,7 @@ fi
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/drvy/.oh-my-zsh"
+export ZSH="/home/drvy/.config/.oh-my-zsh"
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
@@ -79,3 +79,5 @@ bashcompinit
 
 # To customize prompt, run `p10k configure` or edit ~/.dotfiles/zsh/.p10k.zsh.
 [[ ! -f ~/.dotfiles/zsh/.p10k.zsh ]] || source ~/.dotfiles/zsh/.p10k.zsh
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

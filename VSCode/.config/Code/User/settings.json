@@ -28,7 +28,9 @@
     "editor.trimAutoWhitespace": true,
     "editor.wordWrap": "on",
     "editor.wordWrapColumn": 120,
+    "editor.lineNumbers": "relative",
 
+    "terminal.integrated.fontFamily": "MesloLGS NF",
 
     "files.watcherExclude": {
         "**/.git/objects/**": true,
@@ -44,7 +46,8 @@
     "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,
 
-    "phpcs.enable": true,
+    "php.suggest.basic": false,
+    "phpcs.enable": false,
     "phpcs.executablePath": "/home/drvy/.config/composer/vendor/bin/phpcs",
     "phpcs.standard": "PSR12",
     "phpcs.showSources": true,
@@ -131,12 +134,14 @@
     "workbench.editor.highlightModifiedTabs": true,
     "workbench.fontAliasing": "default",
     "workbench.startupEditor": "newUntitledFile",
+    "workbench.sideBar.location": "right",
     "workbench.tree.indent": 16,
     "workbench.tree.renderIndentGuides": "none",
 
+    "window.menuBarVisibility": "hidden",
     "window.nativeTabs": true,
-    "window.titleBarStyle": "native",
     "window.restoreWindows": "none",
+    "window.titleBarStyle": "native",
 
     "editor.tokenColorCustomizations": {
         "comments": "#7cd09963",
@@ -164,10 +169,10 @@
 
     "workbench.colorCustomizations": {
         "editorCursor.foreground": "#928374",
-        "editorCursor.background": "#111"
+        "editorCursor.background": "#111",
     },
 
     "workbench.iconTheme": "material-icon-theme",
-    "workbench.colorTheme": "Gruvbox Dark Hard",
     "window.zoomLevel": 0,
+    "workbench.colorTheme": "Atom One Dark",
 }

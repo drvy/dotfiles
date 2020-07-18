@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =5
+let g:netrw_dirhist_5='/home/drvy/Projects/Brooktec/ebn/docker-leamp/docker'
+let g:netrw_dirhist_4='/home/drvy/Projects/bibitlub/SimpleDirectoryLister/src/app'
+let g:netrw_dirhist_3='/home/drvy/Projects/bibitlub/SimpleDirectoryLister/src'
+let g:netrw_dirhist_2='/home/drvy/Projects/bibitlub/SimpleDirectoryLister'
+let g:netrw_dirhist_1='/home/drvy/Projects/bibitlub'
+let g:netrw_dirhist_0='/home/drvy/Projects/bibitlub/SimpleDirectoryLister/src/app'
+let g:netrw_dirhist_9='/home/drvy/Projects/bibitlub/SimpleDirectoryLister/src/files'
+let g:netrw_dirhist_8='/home/drvy/Projects/bibitlub/SimpleDirectoryLister/src'
+let g:netrw_dirhist_7='/home/drvy/Projects/bibitlub/SimpleDirectoryLister'
+let g:netrw_dirhist_6='/home/drvy/Projects/marcaespana/marcaespana.app/wp-content/themes/shopinia'
