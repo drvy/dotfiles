@@ -1,15 +1,14 @@
 {
     "diffEditor.ignoreTrimWhitespace": true,
-    "explorer.openEditors.visible": 0,
-    "emmet.showAbbreviationSuggestions": false,
 
     "editor.acceptSuggestionOnEnter": "off",
     "editor.cursorSmoothCaretAnimation": false,
     "editor.cursorStyle": "block",
-    "editor.fontFamily": "Jetbrains Mono",
+    "editor.fontFamily": "Fira Code Retina",
     "editor.fontLigatures": true,
     "editor.fontSize": 14,
     "editor.fontWeight": "700",
+    "editor.lineHeight": 22,
     "editor.formatOnPaste": false,
     "editor.insertSpaces": true,
     "editor.largeFileOptimizations": true,
@@ -28,10 +27,13 @@
     "editor.trimAutoWhitespace": true,
     "editor.wordWrap": "on",
     "editor.wordWrapColumn": 120,
-    "editor.lineNumbers": "relative",
+    "editor.lineNumbers": "on",
 
-    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "explorer.openEditors.visible": 0,
 
+    "files.eol": "\n",
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
     "files.watcherExclude": {
         "**/.git/objects/**": true,
         "**/.git/subtree-cache/**": true,
@@ -42,12 +44,63 @@
         "**/wp-includes/**": true,
     },
 
-    "files.eol": "\n",
-    "files.trimTrailingWhitespace": true,
-    "files.insertFinalNewline": true,
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "terminal.integrated.fontFamily": "MesloLGS NF",
+
+    "window.zoomLevel": 0,
+    "workbench.activityBar.visible": false,
+    "workbench.editor.highlightModifiedTabs": true,
+    "workbench.fontAliasing": "default",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.sideBar.location": "left",
+    "workbench.startupEditor": "welcomePage",
+    "workbench.tree.indent": 16,
+    "workbench.tree.renderIndentGuides": "none",
+
+    "window.menuBarVisibility": "hidden",
+    "window.nativeTabs": true,
+    "window.restoreWindows": "none",
+    "window.titleBarStyle": "native",
+
+    "editor.tokenColorCustomizations": {
+        "comments": "#7cd09963",
+        "textMateRules": [
+            {
+                "scope": [
+                    "meta.function.php",
+                    "storage.modifier.php",
+                ],
+                "settings": {"fontStyle": "underline"}
+            },
+            {
+                "scope": ["storage.type.php"],
+                "settings": {"fontStyle": "italic underline"}
+            },
+            {
+                "scope": ["comment.block", "comment"],
+                "settings": {
+                  "fontStyle": "italic",
+                  "foreground": "#7cd09963"
+                }
+            }
+        ],
+    },
+
+
+    "workbench.colorCustomizations": {
+        "sideBar.background": "#111",
+        "sideBarSectionHeader.background": "#111",
+        "sideBar.foreground": "#aaa",
+        "list.inactiveSelectionBackground": "#222",
+        "panel.border": "#282c34"
+    },
+
+    "emmet.showAbbreviationSuggestions": false,
 
     "php.suggest.basic": false,
-    "phpcs.enable": false,
+
+    "phpcs.enable": true,
     "phpcs.executablePath": "/home/drvy/.config/composer/vendor/bin/phpcs",
     "phpcs.standard": "PSR12",
     "phpcs.showSources": true,
@@ -126,53 +179,5 @@
         "zip",
         "zlib"
     ],
-
-    "telemetry.enableCrashReporter": false,
-    "telemetry.enableTelemetry": false,
-
-    "workbench.activityBar.visible": false,
-    "workbench.editor.highlightModifiedTabs": true,
-    "workbench.fontAliasing": "default",
-    "workbench.startupEditor": "newUntitledFile",
-    "workbench.sideBar.location": "right",
-    "workbench.tree.indent": 16,
-    "workbench.tree.renderIndentGuides": "none",
-
-    "window.menuBarVisibility": "hidden",
-    "window.nativeTabs": true,
-    "window.restoreWindows": "none",
-    "window.titleBarStyle": "native",
-
-    "editor.tokenColorCustomizations": {
-        "comments": "#7cd09963",
-        "textMateRules": [
-            {
-                "scope": [
-                    "meta.function.php",
-                    "storage.modifier.php",
-                ],
-                "settings": {"fontStyle": "underline"}
-            },
-            {
-                "scope": ["storage.type.php"],
-                "settings": {"fontStyle": "italic underline"}
-            },
-            {
-                "scope": ["comment.block", "comment"],
-                "settings": {
-                  "fontStyle": "italic",
-                  "foreground": "#7cd09963"
-                }
-            }
-        ],
-    },
-
-    "workbench.colorCustomizations": {
-        "editorCursor.foreground": "#928374",
-        "editorCursor.background": "#111",
-    },
-
-    "workbench.iconTheme": "material-icon-theme",
-    "window.zoomLevel": 0,
-    "workbench.colorTheme": "Atom One Dark",
+    "workbench.colorTheme": "Quiet Light",
 }
