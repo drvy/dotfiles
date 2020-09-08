@@ -6,7 +6,7 @@
     "editor.cursorStyle": "block",
     "editor.fontFamily": "Fira Code Retina",
     "editor.fontLigatures": true,
-    "editor.fontSize": 14,
+    "editor.fontSize": 15,
     "editor.fontWeight": "700",
     "editor.lineHeight": 22,
     "editor.formatOnPaste": false,
@@ -64,7 +64,9 @@
     "window.titleBarStyle": "native",
 
     "editor.tokenColorCustomizations": {
-        "comments": "#7cd09963",
+        // "comments": "#7cd09963",
+        //"comments": "#859900",
+        //"comments": "#22863A",
         "textMateRules": [
             {
                 "scope": [
@@ -80,8 +82,9 @@
             {
                 "scope": ["comment.block", "comment"],
                 "settings": {
-                  "fontStyle": "italic",
-                  "foreground": "#7cd09963"
+                  //"fontStyle": "italic",
+                  //"foreground": "#859900",
+                  //"foreground": "#22863A"
                 }
             }
         ],
@@ -89,18 +92,21 @@
 
 
     "workbench.colorCustomizations": {
-        "sideBar.background": "#111",
-        "sideBarSectionHeader.background": "#111",
-        "sideBar.foreground": "#aaa",
-        "list.inactiveSelectionBackground": "#222",
-        "panel.border": "#282c34"
+        "editorCursor.background": "#ffffff",
+        "editorCursor.foreground": "#ff0000",
+        "peekView.border": "#E50A69AB",
+        "peekViewTitle.background": "#002b36",
+        "peekViewResult.background": "#00212b",
+        "peekViewEditor.background": "#002b36",
+        "peekViewEditor.matchHighlightBackground": "#00212bAB"
+        "editor.lineHighlightBackground": "#151515"
     },
 
     "emmet.showAbbreviationSuggestions": false,
 
     "php.suggest.basic": false,
 
-    "phpcs.enable": true,
+    "phpcs.enable": false,
     "phpcs.executablePath": "/home/drvy/.config/composer/vendor/bin/phpcs",
     "phpcs.standard": "PSR12",
     "phpcs.showSources": true,
@@ -179,5 +185,5 @@
         "zip",
         "zlib"
     ],
-    "workbench.colorTheme": "Quiet Light",
+    "workbench.colorTheme": "Nightbow",
 }
