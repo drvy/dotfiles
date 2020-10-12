@@ -59,7 +59,8 @@ nvm() {
   nvm "$@"
 }
 
-
+alias phpcs="noglob ~/.config/composer/vendor/bin/phpcs"
+alias phpcstest72="phpcs --standard=PHPCompatibility --runtime-set testVersion 7.2 --extensions=php -p ."
 alias phpcstest7="phpcs -p . --standard=PHPCompatibility --runtime-set testVersion 7.0- --ignore=node_modules/* --extensions=php"
 alias phpcstest5="phpcs -p . --standard=PHPCompatibility --runtime-set testVersion 5.6- --ignore=node_modules/* --extensions=php"
 
