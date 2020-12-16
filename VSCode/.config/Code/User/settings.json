@@ -3,12 +3,12 @@
 
     "editor.acceptSuggestionOnEnter": "off",
     "editor.cursorSmoothCaretAnimation": false,
-    "editor.cursorStyle": "block",
-    "editor.fontFamily": "Fira Code Retina",
+    "editor.cursorStyle": "line",
+    "editor.padding.top": 2,
+    "editor.padding.bottom": 2,
+    "editor.fontFamily": "JetBrains Mono",
     "editor.fontLigatures": true,
-    "editor.fontSize": 15,
-    "editor.fontWeight": "700",
-    "editor.lineHeight": 22,
+    "editor.fontSize": 16,
     "editor.formatOnPaste": false,
     "editor.insertSpaces": true,
     "editor.largeFileOptimizations": true,
@@ -47,12 +47,13 @@
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
     "terminal.integrated.fontFamily": "MesloLGS NF",
+    "terminal.integrated.cursorStyle": "underline",
+    "terminal.integrated.fontSize": 14,
 
     "window.zoomLevel": 0,
     "workbench.activityBar.visible": false,
     "workbench.editor.highlightModifiedTabs": true,
     "workbench.fontAliasing": "default",
-    "workbench.iconTheme": "material-icon-theme",
     "workbench.sideBar.location": "left",
     "workbench.startupEditor": "welcomePage",
     "workbench.tree.indent": 16,
@@ -64,9 +65,7 @@
     "window.titleBarStyle": "native",
 
     "editor.tokenColorCustomizations": {
-        // "comments": "#7cd09963",
-        //"comments": "#859900",
-        //"comments": "#22863A",
+        "comments": "#7cd09963",
         "textMateRules": [
             {
                 "scope": [
@@ -82,31 +81,21 @@
             {
                 "scope": ["comment.block", "comment"],
                 "settings": {
-                  //"fontStyle": "italic",
-                  //"foreground": "#859900",
-                  //"foreground": "#22863A"
+                    "fontStyle": "italic",
+                    "foreground": "#7cd09963",
                 }
             }
         ],
     },
 
-
-    "workbench.colorCustomizations": {
-        "editorCursor.background": "#ffffff",
-        "editorCursor.foreground": "#ff0000",
-        "peekView.border": "#E50A69AB",
-        "peekViewTitle.background": "#002b36",
-        "peekViewResult.background": "#00212b",
-        "peekViewEditor.background": "#002b36",
-        "peekViewEditor.matchHighlightBackground": "#00212bAB"
-        "editor.lineHighlightBackground": "#151515"
-    },
+    "terminal.external.linuxExec": "kitty",
+    "terminal.external.osxExec": "Kitty.app",
 
     "emmet.showAbbreviationSuggestions": false,
 
     "php.suggest.basic": false,
 
-    "phpcs.enable": true,
+    "phpcs.enable": false,
     "phpcs.executablePath": "/home/drvy/.config/composer/vendor/bin/phpcs",
     "phpcs.standard": "PSR12",
     "phpcs.showSources": true,
@@ -185,5 +174,9 @@
         "zip",
         "zlib"
     ],
-    "workbench.colorTheme": "Nightbow",
+    "workbench.iconTheme": "material-icon-theme",
+    "python.pythonPath": "/usr/bin/python3",
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
+    "workbench.colorTheme": "Just Black",
 }

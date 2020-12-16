@@ -24,3 +24,5 @@
 
 [core]
 	excludesfile = /home/drvy/.gitignore
+[init]
+	defaultBranch = main
