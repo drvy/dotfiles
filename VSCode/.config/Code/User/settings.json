@@ -8,7 +8,8 @@
     "editor.padding.bottom": 2,
     "editor.fontFamily": "JetBrains Mono",
     "editor.fontLigatures": true,
-    "editor.fontSize": 16,
+    "editor.fontSize": 14,
+    "editor.lineHeight": 21,
     "editor.formatOnPaste": false,
     "editor.insertSpaces": true,
     "editor.largeFileOptimizations": true,
@@ -27,7 +28,7 @@
     "editor.trimAutoWhitespace": true,
     "editor.wordWrap": "on",
     "editor.wordWrapColumn": 120,
-    "editor.lineNumbers": "on",
+    "editor.lineNumbers": "relative",
 
     "explorer.openEditors.visible": 0,
 
@@ -46,7 +47,7 @@
 
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
-    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "terminal.integrated.fontFamily": "JetBrains Mono",
     "terminal.integrated.cursorStyle": "underline",
     "terminal.integrated.fontSize": 14,
 
@@ -86,6 +87,13 @@
                 }
             }
         ],
+    },
+
+    "workbench.colorCustomizations": {
+        "editorLineNumber.foreground": "#fabd2f",
+        "editorCursor.foreground": "#fabd2f",
+        "tab.activeBorderTop": "#fabd2f",
+        "editor.selectionBackground": "#222"
     },
 
     "terminal.external.linuxExec": "kitty",

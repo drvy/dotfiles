@@ -10,7 +10,7 @@ fi
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/drvy/.config/.oh-my-zsh"
-ZSH_THEME="powerlevel10k/powerlevel10k"
+ZSH_THEME="drvy"
 
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 CASE_SENSITIVE="false"
@@ -59,6 +59,7 @@ nvm() {
   nvm "$@"
 }
 
+alias dockc="sudo docker-compose"
 alias phpcs="noglob ~/.config/composer/vendor/bin/phpcs"
 alias phpcstest72="phpcs --standard=PHPCompatibility --runtime-set testVersion 7.2 --extensions=php -p ."
 alias phpcstest7="phpcs -p . --standard=PHPCompatibility --runtime-set testVersion 7.0- --ignore=node_modules/* --extensions=php"
@@ -71,14 +72,16 @@ function cd {
     builtin cd "$@" && ls
 }
 
+function precmd() {
+    if [ -z "$NEW_LINE_BEFORE_PROMPT" ]; then
+        NEW_LINE_BEFORE_PROMPT=1
+    elif [ "$NEW_LINE_BEFORE_PROMPT" -eq 1 ]; then
+        echo "\n"
+    fi 
+}
+
 # bash completion for the `wp` command
 autoload bashcompinit
 bashcompinit
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-# To customize prompt, run `p10k configure` or edit ~/.dotfiles/zsh/.p10k.zsh.
-[[ ! -f ~/.dotfiles/zsh/.p10k.zsh ]] || source ~/.dotfiles/zsh/.p10k.zsh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
