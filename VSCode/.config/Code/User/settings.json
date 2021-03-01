@@ -8,7 +8,7 @@
     "editor.padding.bottom": 2,
     "editor.fontFamily": "JetBrains Mono",
     "editor.fontLigatures": true,
-    "editor.fontSize": 14,
+    "editor.fontSize": 15,
     "editor.lineHeight": 21,
     "editor.formatOnPaste": false,
     "editor.insertSpaces": true,
@@ -52,26 +52,32 @@
     "terminal.integrated.fontSize": 14,
 
     "window.zoomLevel": 0,
-    "workbench.activityBar.visible": false,
+    "workbench.activityBar.visible": true,
     "workbench.editor.highlightModifiedTabs": true,
     "workbench.fontAliasing": "default",
     "workbench.sideBar.location": "left",
     "workbench.startupEditor": "welcomePage",
     "workbench.tree.indent": 16,
     "workbench.tree.renderIndentGuides": "none",
+    "workbench.editor.decorations.colors":true,
+    "workbench.editor.decorations.badges":true,
 
-    "window.menuBarVisibility": "hidden",
+    "window.menuBarVisibility": "toggle",
     "window.nativeTabs": true,
     "window.restoreWindows": "none",
     "window.titleBarStyle": "native",
 
     "editor.tokenColorCustomizations": {
-        "comments": "#7cd09963",
+        "comments": "#7cd09993",
         "textMateRules": [
             {
                 "scope": [
                     "meta.function.php",
                     "storage.modifier.php",
+                    "storage.type.function.php",
+                    "meta.function.parameter.typehinted.php",
+                    "meta.function.parameters.php",
+                    "keyword.operator.return-value.php",
                 ],
                 "settings": {"fontStyle": "underline"}
             },
@@ -89,23 +95,43 @@
         ],
     },
 
+    "terminal.external.linuxExec": "kitty",
+    "terminal.external.osxExec": "Kitty.app",
+
     "workbench.colorCustomizations": {
         "editorLineNumber.foreground": "#fabd2f",
         "editorCursor.foreground": "#fabd2f",
         "tab.activeBorderTop": "#fabd2f",
-        "editor.selectionBackground": "#222"
+        //"editor.selectionBackground": "#222",
+        "terminalCursor.background": "#282a36",
+        "terminalCursor.foreground": "#97979b",
+        "terminal.selectionBackground": "#97979b33",
+        "terminal.foreground": "#eff0eb",
+        "terminal.ansiBlack": "#282a36",
+        "terminal.ansiRed": "#ff5c57",
+        "terminal.ansiGreen": "#5af78e",
+        "terminal.ansiYellow": "#f3f99d",
+        "terminal.ansiBlue": "#57c7ff",
+        "terminal.ansiMagenta": "#ff6ac1",
+        "terminal.ansiCyan": "#9aedfe",
+        "terminal.ansiWhite": "#f1f1f0",
+        "terminal.ansiBrightBlack": "#686868",
+        "terminal.ansiBrightRed": "#ff5c57",
+        "terminal.ansiBrightGreen": "#5af78e",
+        "terminal.ansiBrightYellow": "#f3f99d",
+        "terminal.ansiBrightBlue": "#57c7ff",
+        "terminal.ansiBrightMagenta": "#ff6ac1",
+        "terminal.ansiBrightCyan": "#9aedfe",
+        "terminal.ansiBrightWhite": "#eff0eb"
     },
-
-    "terminal.external.linuxExec": "kitty",
-    "terminal.external.osxExec": "Kitty.app",
 
     "emmet.showAbbreviationSuggestions": false,
 
     "php.suggest.basic": false,
 
-    "phpcs.enable": false,
+    "phpcs.enable": true,
     "phpcs.executablePath": "/home/drvy/.config/composer/vendor/bin/phpcs",
-    "phpcs.standard": "PSR12",
+    "phpcs.standard": "brooktec-wp-coding-standars",
     "phpcs.showSources": true,
 
     "intelephense.stubs": [
@@ -186,5 +212,6 @@
     "python.pythonPath": "/usr/bin/python3",
     "python.linting.pylintEnabled": true,
     "python.linting.enabled": true,
-    "workbench.colorTheme": "Just Black",
+    "workbench.colorTheme": "Atom Just Black",
+    "todo-tree.tree.showScanModeButton": false,
 }

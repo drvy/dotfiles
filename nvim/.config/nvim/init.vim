@@ -35,12 +35,10 @@ Plug 'airblade/vim-gitgutter'
 Plug 'scrooloose/nerdtree'
 Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-commentary'
-
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
-Plug 'jiangmiao/auto-pairs'
 Plug 'andymass/vim-matchup'
-
+Plug 'ajmwagar/vim-deus'
+Plug 'gosukiwi/vim-atom-dark'
 " PHP Stuff
 call plug#end()
 
@@ -67,11 +65,14 @@ highlight GitGutterChangeDelete ctermfg=4
 :command! W w
 :command! Q q
 
+inoremap <silent><expr> <c-space> coc#refresh()
 
-set shell=/usr/local/bin/zsh
+set shell=/usr/bin/zsh
+
 if (has("nvim"))
     let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 endif
+
 set termguicolors
-color dracula
+color atom-dark 
 

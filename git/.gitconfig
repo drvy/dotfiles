@@ -1,6 +1,6 @@
 [user]
-    name = Dragomir Yordanov
-    email = dyordanov@drvy.net
+	name = dyordanov
+	email = dyordanov@drvy.net
 
 [color]
     diff = auto
@@ -25,4 +25,4 @@
 [core]
 	excludesfile = /home/drvy/.gitignore
 [init]
-	defaultBranch = "main"
+	defaultBranch = "master"
