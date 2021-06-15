@@ -36,7 +36,9 @@ nvm() {
   [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
   nvm "$@"
 }
-
+alias vim="nvim"
+alias svim="nvim -u /home/drvy/.config/SpaceVim/vimrc"
+alias spacevim="svim"
 alias sudo="doas"
 alias dockc="sudo docker-compose"
 alias phpcs="noglob ~/.config/composer/vendor/bin/phpcs"

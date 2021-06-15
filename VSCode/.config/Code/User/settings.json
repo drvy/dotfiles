@@ -6,9 +6,10 @@
     "editor.cursorStyle": "line",
     "editor.padding.top": 2,
     "editor.padding.bottom": 2,
-    "editor.fontFamily": "JetBrains Mono",
+    "editor.fontFamily": "Jetbrains Mono",
     "editor.fontLigatures": true,
     "editor.fontSize": 15,
+    "editor.fontWeight": "500",
     "editor.lineHeight": 21,
     "editor.formatOnPaste": false,
     "editor.insertSpaces": true,
@@ -28,7 +29,7 @@
     "editor.trimAutoWhitespace": true,
     "editor.wordWrap": "on",
     "editor.wordWrapColumn": 120,
-    "editor.lineNumbers": "relative",
+    "editor.lineNumbers": "on",
 
     "explorer.openEditors.visible": 0,
 
@@ -99,10 +100,18 @@
     "terminal.external.osxExec": "Kitty.app",
 
     "workbench.colorCustomizations": {
-        "editorLineNumber.foreground": "#fabd2f",
+        "editorLineNumber.activeForeground": "#fabd2f",
+        "editorLineNumber.foreground": "#333",
+        "editor.lineHighlightBackground": "#000",
         "editorCursor.foreground": "#fabd2f",
         "tab.activeBorderTop": "#fabd2f",
-        //"editor.selectionBackground": "#222",
+        "editor.selectionHighlightBorder": "#e06c75",
+        "searchEditor.findMatchBorder": "#e06c75",
+        "editor.inactiveSelectionBackground": "#222",
+        "editor.findMatchBorder": "#fabd2f",
+        "editor.findMatchHighlightBorder": "#e06c75",
+        "editor.selectionBackground": "#333",
+
         "terminalCursor.background": "#282a36",
         "terminalCursor.foreground": "#97979b",
         "terminal.selectionBackground": "#97979b33",
@@ -130,8 +139,8 @@
     "php.suggest.basic": false,
 
     "phpcs.enable": true,
-    "phpcs.executablePath": "/home/drvy/.config/composer/vendor/bin/phpcs",
-    "phpcs.standard": "brooktec-wp-coding-standars",
+    "phpcs.executablePath": "/home/drvy/.config/composer/vendor/squizlabs/php_codesniffer/bin/phpcs",
+    "phpcs.standard": "PSR12",
     "phpcs.showSources": true,
 
     "intelephense.stubs": [
@@ -212,6 +221,21 @@
     "python.pythonPath": "/usr/bin/python3",
     "python.linting.pylintEnabled": true,
     "python.linting.enabled": true,
-    "workbench.colorTheme": "Atom Just Black",
     "todo-tree.tree.showScanModeButton": false,
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "todo-tree.general.tags": [
+        "BUG",
+        "HACK",
+        "FIXME",
+        "TODO",
+        "XXX",
+        "[ ]",
+        "[x]"
+    ],
+    "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
+    "settingsSync.keybindingsPerPlatform": false,
+    "workbench.editor.untitled.hint": "hidden",
+    "workbench.colorTheme": "Atom Just Black",
 }
